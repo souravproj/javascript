@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+
+    <!-- <h1 id="Rajesh">Rajesh</h1>
+    <h1 id="Sandip">Sandip</h1> 
+     <button onclick="HideRajeshShowSandip()">Click here</button> -->
+
+    <h1 id="firstTag">Rajesh</h1>
+    <button onclick="ChangeRajeshToSandip()">Change Rajesh to Sandip</button>
+  </body>
+  <script>
+    // document.getElementById("Sandip").style.display = "none";
+
+    const changeTile = () => {
+      //using javascript innerhtml
+
+      console.log("Before update", document.getElementById("Rajesh").innerHTML);
+      document.getElementById("Rajesh").innerHTML = "Sourav";
+      console.log("After Update", document.getElementById("Rajesh").innerHTML);
+
+      //using style
+      document.getElementById("Rajesh").style.display = "none";
+      document.getElementById("Sourav").style.display = "block";
+    };
+
+    const HideRajeshShowSandip = () => {
+      document.getElementById("Rajesh").style.display = "none";
+      document.getElementById("Sandip").style.display = "block";
+    };
+
+    const ChangeRajeshToSandip = () => {
+      console.log(document.getElementById("firstTag").innerHTML);
+      document.getElementById("firstTag").innerHTML = "Sandip";
+    };
+  </script>
+  <script src="./script.js"></script>
+</html>
