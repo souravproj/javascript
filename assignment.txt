@@ -50,4 +50,4 @@
 /*18. Write a program that checks if a number is even or odd.
 19. Create a function that takes two numbers and returns the larger one.
 20. Combine strings, variables, and numbers to print a sentence like:
-    "John has 5 apples." (use template literals or concatenation)
+"John has 5 apples." (use template literals or concatenation)
