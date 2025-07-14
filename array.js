@@ -131,4 +131,44 @@ console.log("afterSlice", afterSlice);
 const SelectafterSlice = Cfruits.slice(1, 3);
 console.log("SelectafterSlice", SelectafterSlice);
 
-//git checking for rajesh
+//JavaScript Array indexOf()
+//The indexOf() method searches an array for an element value and returns its position.
+// -1 means it does not exist in that array
+const fruitsIndexSearch = ["Apple", "Orange", "Apple", "Mango", "Apple", "Rajesh", "das", "KajuDa"];
+console.log(fruitsIndexSearch.indexOf('Apple'))
+
+//lastIndexOf()
+//it always gives the output of last founded element of that array
+console.log(fruitsIndexSearch.lastIndexOf('Apple'))
+
+//includes()
+let checkIncludes = fruitsIndexSearch.includes("das")
+console.log("checkIncludes", checkIncludes)
+let checkIncludesAfterConvertToLowerCase = fruitsIndexSearch.includes("Das".toLowerCase())
+console.log("checkIncludesAfterConvertToLowerCase", checkIncludesAfterConvertToLowerCase)
+let checkedElement = "DAS"
+console.log("checkedElement Existant in array", fruitsIndexSearch.includes(checkedElement.toLowerCase()))
+
+//find()
+//The find() method returns the value of the first array element that passes a test function.
+
+const numbers = [4, 9, 16, 25, 29];
+const findGratedNumbersFromTheAParticularElement = (value, index) => {
+    return value < 25;
+}
+let ExpectedAns = numbers.find(findGratedNumbersFromTheAParticularElement)
+console.log("ExpectedAns", ExpectedAns)
+
+//find index help us to find the index position of the outputted element
+let indexOfFindElement = numbers.findIndex(findGratedNumbersFromTheAParticularElement)
+console.log("indexOfFindElement", indexOfFindElement)
+
+//findLast()
+//it will return the value of the last matched outputted value 
+let findLast = numbers.findLast(findGratedNumbersFromTheAParticularElement);
+console.log("findLast", findLast)
+
+//findLastIndex()
+//it will help to get the last elements index positions during find operation
+let indexOffindLast = numbers.findLastIndex(findGratedNumbersFromTheAParticularElement);
+console.log("indexOffindLast", indexOffindLast)
