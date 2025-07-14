@@ -1,0 +1,53 @@
+/*## 📝 JavaScript Basics Assignment
+
+### 📌 Instructions:
+
+* Answer each question using JavaScript.
+* Use comments to explain your code where necessary.
+* You can run and test your code in the browser console or any online JavaScript editor (e.g., JSFiddle, CodePen, Repl.it).
+
+---
+
+### 🔢 Numbers & Operators (1–5)
+
+1. Declare two variables, a = 10 and b = 3. Print the result of a divided by b.
+2. Write a JavaScript program to find the remainder when 15 is divided by 4.
+3. Use the ++ and -- operators to increase and decrease a variable x = 5. Show the result after each operation.
+4. Write an expression that evaluates to true using comparison operators (>, <, ==, ===, etc.).
+5. Create a program that adds three numbers and finds their average.
+
+---
+
+### 📚 Variables (6–9)
+
+/*6. Declare a variable called userName and assign your name to it.
+7. What is the difference between let, const, and var? Give one example of each.
+8. Reassign a variable declared with let and try to reassign a const variable. What happens?
+9. Declare a variable without assigning any value. What is its type?
+
+---
+
+### 🌣 Strings (10–13)
+
+/*10. Concatenate two strings: "Hello" and "World" with a space between.
+11. Find the length of the string "JavaScript".
+12. Convert "hello world" to uppercase and "JAVASCRIPT" to lowercase.
+13. Extract the word "Script" from the string "JavaScript" using string methods.
+
+---
+
+### 🧮 Arrays (14–17)
+
+/*14. Declare an array with 5 numbers. Print the first and last element.
+15. Add a new number to the end of the array using .push() and remove the first element using .shift().
+16. Sort an array [3, 1, 4, 1, 5] in ascending order.
+17. Use a loop to print each element of the array ["a", "b", "c"].
+
+---
+
+### 🧠 Mixed Logic (18–20)
+
+/*18. Write a program that checks if a number is even or odd.
+19. Create a function that takes two numbers and returns the larger one.
+20. Combine strings, variables, and numbers to print a sentence like:
+    "John has 5 apples." (use template literals or concatenation)
