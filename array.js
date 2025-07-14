@@ -130,3 +130,5 @@ const afterSlice = Cfruits.slice(5);
 console.log("afterSlice", afterSlice);
 const SelectafterSlice = Cfruits.slice(1, 3);
 console.log("SelectafterSlice", SelectafterSlice);
+
+//git checking for rajesh
