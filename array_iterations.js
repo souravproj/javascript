@@ -29,6 +29,7 @@ const filterForEven = (number) => {
 }
 console.log(numbersForFilter.filter(filterForEven))
 
+//array reduce method
 
 const numbersRajesh = [45, 4, 9, 16, 25, 90];
 const totalNumbers = (accumulator, currentValue) => {
