@@ -25,3 +25,51 @@ const months = ["Jan", "Feb", "Mar", "Apr"];
 const reversed = months.toReversed();
 console.log("reversed", reversed)
 console.log("months", months)
+
+
+const newStructuredArray = [
+    {
+        name: "rajesh",
+        title: "Das",
+        member_name: [
+            {
+                father: "Ram Das",
+                age: 24,
+                business: [
+                    {
+                        a: "A"
+                    },
+                    {
+                        a: "A"
+                    },
+                    {
+                        a: "A"
+                    }
+
+                ]
+            }
+        ]
+    },
+    {
+        name: "rajesh",
+        title: "Das",
+        member_name: [
+            {
+                father: "Ram Das",
+                age: 24,
+                business: ["a", "b", "c"]
+            }
+        ]
+    },
+    {
+        name: "rajesh",
+        title: "Das",
+        member_name: [
+            {
+                father: "Ram Das",
+                age: 24,
+                business: ["a", "b", "c"]
+            }
+        ]
+    }
+]
