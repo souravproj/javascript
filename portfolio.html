@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #1f1f1f;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 2px solid #0d6efd;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #0d6efd;
+        }
+        header nav ul {
+            padding: 0;
+            list-style: none;
+            margin-top: 1rem;
+        }
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        header nav ul li a:hover {
+            color: #0d6efd;
+        }
+        section {
+            padding: 2rem 4rem;
+            margin: 0;
+            border-bottom: 1px solid #333;
+        }
+        h2 {
+            color: #0d6efd;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        #skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        #skills li {
+            background-color: #1f1f1f;
+            margin: 0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        #skills li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+        #education li, #contact p {
+            background-color: transparent;
+            margin: 1rem 0;
+            padding: 0;
+            border-radius: 0;
+        }
+        #contact a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            section {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rajesh Das</h1>
+        <p>Web Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate web developer with a strong foundation in computer science. I am eager to learn new technologies and contribute to challenging projects.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>MongoDB</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Higher Secondary: 80%</li>
+            <li>Secondary Exam: 90%</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

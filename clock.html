@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style component -->
+    <style>
+      body {
+        background: #000;
+        height: 100vh;
+        font-family: "Roboto";
+      }
+      .main-container {
+        /* align-content: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        color: white;
+      }
+
+      #clock {
+        font-size: 50px;
+        letter-spacing: 2px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Real Time Clock</h1>
+      <div id="clock">--:--:--</div>
+    </div>
+    <script>
+      const CurrentIndianTime = () => {
+        const currentDate = new Date();
+        console.log("currentDate", currentDate);
+
+        let hours = currentDate.getHours();
+        let minutes = currentDate.getMinutes();
+        let seconds = currentDate.getSeconds();
+        // turnary operator
+        let ampm = hours >= 12 ? "PM" : "AM";
+
+        //if else intregation as per rajesh
+
+        // let calculateAmPm;
+        // if (hours >= 12) {
+        //   calculateAmPm = "PM";
+        // } else {
+        //   calculateAmPm = "AM";
+        // }
+
+        //example of moduler formet :- 12%10=2
+
+        //modify the hours into 12 hours formet
+        hours = hours % 12; // it will return either 0 or a number
+        hours = hours ? hours : 12;
+        // if (hours === 0) {
+        //   hours = 12;
+        // } else {
+        //   hours = hours;
+        // }
+
+        //add '0' if you get any single digit number
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        const CalculatedTime = `${hours}:${minutes}:${seconds} ${ampm}`;
+        const htmlElement = (document.getElementById("clock").innerHTML =
+          CalculatedTime);
+      };
+
+      CurrentIndianTime();
+      setInterval(CurrentIndianTime, 1000);
+    </script>
+  </body>
+</html>
