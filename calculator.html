@@ -107,8 +107,10 @@
 
       // This function is called when you click any of the number or operator buttons
       function appendToDisplay(value) {
+        console.log("Value", value);
         // We just add the value of the button to our input string
-        currentInput += value;
+        // currentInput += value;
+        currentInput = currentInput + value;
         // Update the calculator screen to show the new input
         console.log("currentInput", currentInput);
         display.value = currentInput;
@@ -130,7 +132,7 @@
         console.log("operator", operator);
         console.log("display", display.value);
       }
-
+      ("2+3-8*7");
       // This function is called when you click the '=' button
       function calculateResult() {
         // We use a function called 'eval' which takes a string and runs it as code.
@@ -142,6 +144,7 @@
           currentInput = result.toString(); // The result becomes the new input
         } catch (error) {
           // If there's an error (like '2+*3'), show 'Error'
+          console.log("error", error);
           display.value = "Error";
           currentInput = "";
         }
